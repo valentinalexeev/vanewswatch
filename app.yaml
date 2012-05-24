@@ -1,0 +1,21 @@
+application: vanewswatch
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /google00c9e9ac55e7f99a\.html
+  static_files: google00c9e9ac55e7f99a.html
+  upload: google00c9e9ac55e7f99a\.html
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.1"
