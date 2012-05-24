@@ -1,0 +1,6 @@
+[submodule "lib/libgreader"]
+	path = lib/libgreader
+	url = git://github.com/askedrelic/libgreader.git
+[submodule "lib/python-oauth2"]
+	path = lib/python-oauth2
+	url = git://github.com/simplegeo/python-oauth2.git
