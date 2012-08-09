@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>NewsWatch: Filter list</title>
+    </head>
+    <body>
+        <table>
+            <th><td>Criteria</td><td>Actions</td></th>
+        {% for filter in filters %}
+            <tr>
+                <td>{{ filter.filterCriteria }}</td>
+                <td>
+                    <ol>
+                        {% for action in filter.actionList %}
+                        <li>{{ action }}</li>
+                        {% endfor %}
+                    </ol>
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>NewsWatch: feed list</title>
+    </head>
+    <body>
+        <ul>
+        {% for feed in feeds %}
+            <li>{{ feed.title }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
