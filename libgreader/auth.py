@@ -332,7 +332,16 @@ class OAuth2Method(AuthenticationMethod):
             return None
 
 class GAPDecoratorAuthMethod(AuthenticationMethod):
+    """
+    An adapter to work with Google API for Python OAuth2 wrapper.
+    Especially useful when deploying to Google AppEngine.
+    """
     def __init__(self, credentials):
+        """
+        Initialize auth method with existing credentials.
+        Args:
+            credentials: OAuth2 credentials obtained via GAP OAuth2 library.
+        """
         super(GAPDecoratorAuthMethod, self).__init__()
         self._http = None
         self._credentials = credentials
